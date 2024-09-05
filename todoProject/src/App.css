@@ -1,0 +1,9 @@
+.font-bold{
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+  padding-left: 1rem;
+}
+.delete{
+  padding: 1rem 2.5rem !important;
+}

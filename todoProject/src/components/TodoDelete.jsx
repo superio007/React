@@ -1,6 +1,6 @@
-function TodoDelete(){
-  let todoName = "Buy Milk";
-  let todoDate = "4/10/2023"
+function TodoDelete(props){
+  let todoName = props.name;
+  let todoDate = props.Date;
     return (
       <div className="row mb-4">
         <div className="col-5 d-flex">

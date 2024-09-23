@@ -11,18 +11,9 @@ function App() {
           <Appname/>
           <div className="mt-5">
             <TodoAdd />
-            <TodoDelete/>
-            <div className="row mb-4">
-              <div className="col-5 d-flex">
-                <p className='font-bold'>Go to College</p>
-              </div>
-              <div className="col-5 d-flex ">
-                <p className='font-bold'>4/10/2023</p>
-              </div>
-              <div className='col-2'>
-                <button type="submit" className='btn btn-danger delete'>Delete</button>
-              </div>
-            </div>
+            <TodoDelete name="Go to College" Date="4/10/2023"/>
+            <TodoDelete name="Buy Milk" Date="4/10/2023"/>
+            <TodoDelete name="Do Home Work" Date="4/10/2023"/>
           </div>
       </div>
     </>

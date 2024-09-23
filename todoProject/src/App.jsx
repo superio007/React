@@ -5,30 +5,35 @@ import TodoDelete from './components/Todoitem'
 import TodoItems from './components/TodoItems';
 let itemsArr = [
   {
-    name : 'Go to College',
+    name : 'Wake Up',
     dueDate : '4/10/2023'
   },
   {
-    name : 'Buy Milk',
+    name : 'Have BreakFast',
     dueDate : '4/10/2023'
   },
   {
-    name : 'Do Home Work',
+    name : 'Get Ready',
+    dueDate : '4/10/2023'
+  },
+  {
+    name : 'Go To Office',
+    dueDate : '4/10/2023'
+  },
+  {
+    name : 'DO Coding',
     dueDate : '4/10/2023'
   },
 ];
 function App() {
-
+  console.log("main")
   return (
     <>
       <div className='container'>
           <Appname/>
           <div className="mt-5">
             <TodoAdd />
-            {/* <TodoItems list={itemsArr}></TodoItems> */}
-            <TodoDelete name="Go to College" Date="4/10/2023"/>
-            <TodoDelete name="Buy Milk" Date="4/10/2023"/>
-            <TodoDelete name="Do Home Work" Date="4/10/2023"/>
+            <TodoItems list={itemsArr}></TodoItems>
           </div>
       </div>
     </>

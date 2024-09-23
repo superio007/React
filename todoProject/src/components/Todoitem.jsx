@@ -1,6 +1,7 @@
-function TodoDelete(props){
-  let todoName = props.name;
-  let todoDate = props.Date;
+function Todoitem({DueDate , name}){
+  console.log('Todoitem');
+  let todoName = name;
+  let todoDate = DueDate;
     return (
       <div className="row mb-4">
         <div className="col-5 d-flex">
@@ -15,4 +16,4 @@ function TodoDelete(props){
       </div>
     );
 }
-export default TodoDelete;
+export default Todoitem;

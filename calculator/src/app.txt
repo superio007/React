@@ -1,0 +1,44 @@
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+function App() {
+  return (
+    <>
+      <div className="External_Div">
+        <div className="Internal_Div">
+          <div>
+            <h1 className="text-center text-uppercase">Calculator</h1>
+          </div>
+          <div>
+              <input className="result_div" type="text" name="" id="" />
+          </div>
+          <div className="input_div">
+             <div className="input_btn">C</div>
+             <div className="input_btn">1</div>
+             <div className="input_btn">2</div>
+             <div className="input_btn">+</div>
+             <div className="input_btn">3</div>
+             <div className="input_btn">4</div>
+             <div className="input_btn">-</div>
+             <div className="input_btn">5</div>
+             <div className="input_btn">6</div>
+             <div className="input_btn">*</div>
+             <div className="input_btn">7</div>
+             <div className="input_btn">8</div>
+             <div className="input_btn">/</div>
+             <div className="input_btn">=</div>
+             <div className="input_btn">9</div>
+             <div className="last-row">
+              <div className="input_btn">0</div>
+              <div className="input_btn">.</div>
+             </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
+
+export default App;

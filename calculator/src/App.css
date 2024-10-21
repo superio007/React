@@ -1,0 +1,37 @@
+body {
+  background-color: black !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.External_Div {
+  width: 350px;
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+
+.Internal_Div {
+  height: 100%;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+
+.result_div {
+  width: 300px;
+  height: 70px;
+  border: 1px solid black;
+  margin: 15px 18px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding-right: 15px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+

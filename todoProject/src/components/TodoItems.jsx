@@ -1,10 +1,9 @@
 import TodoItem from './Todoitem'
-console.log('TodoItems')
-let TodoItems = ({ list }) => {
+let TodoItems = ({ list , deleteItem }) => {
   return (
     <>
-      {list.map((item)=>(
-        <TodoItem key={item.name} name={item.name} DueDate={item.DueDate} />
+      {list.map((item,index)=>(
+        <TodoItem key={index} name={item.name} deleteItem={() => deleteItem(index)} dueDate={item.dueDate} />
       ))}
     </>
   );

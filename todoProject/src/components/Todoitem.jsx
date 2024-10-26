@@ -1,9 +1,8 @@
-function Todoitem({DueDate , name}){
-  console.log('Todoitem');
+function Todoitem({dueDate , name,deleteItem,index}) {
   let todoName = name;
-  let todoDate = DueDate;
+  let todoDate = dueDate;
     return (
-      <div className="row mb-4">
+      <div className="row mb-4"> 
         <div className="col-5 d-flex">
           <p className='font-bold'>{todoName}</p>
         </div>
@@ -11,7 +10,7 @@ function Todoitem({DueDate , name}){
           <p className='font-bold'>{todoDate}</p>
         </div>
         <div className='col-2'>
-          <button type="submit" className='btn btn-danger delete'>Delete</button>
+          <button type="submit" onClick={() => deleteItem(index)}  className='btn btn-danger delete'>Delete</button>
         </div>
       </div>
     );
